@@ -24,10 +24,25 @@ call plug#end()
 " ==============================================================================
 silent! colorscheme jellybeans " Favorite colorscheme
 
+" Tab settings
 set noet ts=4 sw=0 sts=0
+
+" Show tab characters and off-screen text indicator
+set list listchars=tab:▸\ ,trail:·,precedes:←,extends:→
+
+" Show relative line number
+" Show line number on current line and relative line numbers
+set number relativenumber
+
+" Highlight current line
+"TODO: Make CursorLine change color for insert mode
+set cursorline cursorcolumn
+"autocmd InsertEnter * highlight CursorLine guifg=something
+"autocmd InsertLeave * highlight CursorLine guifg=something
 
 " Ignore case for searching
 set ignorecase
+
 " Show matches while typing
 set incsearch
 
@@ -35,5 +50,7 @@ set incsearch
 "set clipboard=xterm_clipboard
 set clipboard=unnamed
 
+" Source files
 source keymap.vim
+source statusline.vim
 
