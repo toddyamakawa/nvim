@@ -51,6 +51,5 @@ set incsearch
 set clipboard=unnamed
 
 " Source files
-source keymap.vim
-source statusline.vim
+set rtp+=~/.config/nvim/my-plugins
 
