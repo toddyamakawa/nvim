@@ -31,19 +31,16 @@ Plug 'nvim-treesitter/nvim-treesitter'
 
 " --- context.vim ---
 " Shows context (e.g. functions, loops, conditions) of current buffer
+let g:context_add_mappings = 0
 Plug 'wellle/context.vim'
 
 " --- Indentation ---
+" Show spaces for indentation
+let g:indentLine_char = '|'
 " Show indentation characters
 Plug 'yggdroot/indentline'
-
 " Reset IndentLines when tabstop changes
 autocmd OptionSet tabstop IndentLinesReset
 autocmd OptionSet tabstop set sts=0 sw=0
-
-" Show spaces for indentation
-let g:indentLine_char = '|'
-
-
 
 

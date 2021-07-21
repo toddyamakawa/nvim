@@ -10,13 +10,21 @@ nnoremap <silent><unique> C "_C
 " Go to beginning/end of line
 nnoremap <silent><unique> gh ^
 nnoremap <silent><unique> gl $
+nnoremap <silent><unique> H ^
+nnoremap <silent><unique> L $
 
 " Disable lookup
 nnoremap <silent><unique> K <nop>
 
+" Center after search
+" TODO: https://github.com/wellle/context.vim
+" nnoremap <silent> <expr> zz context#util#map('zz')
+nnoremap <silent><unique> N Nzz
+nnoremap <silent><unique> n nzz
+
 " Mark with `M` and jump to mark with `m`
-noremap <silent><unique> M m
-noremap <silent><unique> m '
+nnoremap <silent><unique> M m
+nnoremap <silent><unique> m '
 
 " Redo
 nnoremap <silent><unique> U <c-r>
