@@ -55,11 +55,26 @@ nnoremap <silent><unique> <F5> :edit<Enter>
 " WINDOWS
 " ==============================================================================
 
-" Move between windows
+" Switch window
 nnoremap <silent><unique> <Space>h <C-w>h
 nnoremap <silent><unique> <Space>j <C-w>j
 nnoremap <silent><unique> <Space>k <C-w>k
 nnoremap <silent><unique> <Space>l <C-w>l
+
+" TODO: Test these out
+" Split window
+"nmap ss :split<Return><C-w>w
+"nmap sv :vsplit<Return><C-w>w
+" Move window
+"nmap <Space> <C-w>w
+"map s<left> <C-w>h
+"map s<up> <C-w>k
+"map s<down> <C-w>j
+"map s<right> <C-w>l
+"map sh <C-w>h
+"map sk <C-w>k
+"map sj <C-w>j
+"map sl <C-w>l
 
 
 " ==============================================================================
@@ -102,4 +117,10 @@ vnoremap v <C-v>
 " Exit visual mode
 vnoremap q <Esc>
 
+
+" ==============================================================================
+" TERMINAL MODE MAPPINGS
+" ==============================================================================
+" TODO: Find a better mapping
+tnoremap <Esc> <C-\><C-n>
 
